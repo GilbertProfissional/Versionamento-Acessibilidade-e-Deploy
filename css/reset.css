@@ -1,0 +1,99 @@
+/* ============================================
+   RESET.CSS - Normalização e Reset CSS
+   ============================================ */
+
+/* Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML e Body */
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+/* Elementos de Mídia */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulários */
+input, button, textarea, select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Remove animações para usuários com preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Links */
+a {
+    text-decoration-skip-ink: auto;
+}
+
+/* Tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Fieldset */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Legend */
+legend {
+    padding: 0;
+}
+
+/* Text Area */
+textarea {
+    resize: vertical;
+}
+
+/* Focus Visible */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
